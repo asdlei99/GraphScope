@@ -249,6 +249,7 @@ MathJax = {
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment.html">GraphScope Interactive Deployment</a></li>
 </ul>
 </li>
 </ul>
@@ -712,6 +713,7 @@ MathJax = {
 <li><p>Scalability: GraphScope Interactive possesses the potential for distributed processing. This means it can be expanded with few effort to handle larger-scale graphs, ensuring it remains effective as your data grows.</p></li>
 </ul>
 </li>
+<li><p><strong>Massive Graph Support</strong>: To enhance system throughput and query performance, we store all graph data in memory by default. However, when encountering graph data too large to fit entirely in memory, we offload excess data to disk storage. This approach, while effectively handling massive-scale graph data, may result in reduced throughput. Moving forward, we aim to adopt a master-slave architecture designed to enhance concurrent querying performance. This will be achieved by distributing the workload across multiple machines, thereby optimizing resource utilization to improve throughput.</p></li>
 </ol>
 </section>
 <section id="property-graph-model-and-graph-queries">

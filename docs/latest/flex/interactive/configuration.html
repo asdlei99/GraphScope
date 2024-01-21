@@ -249,6 +249,7 @@ MathJax = {
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deployment.html">GraphScope Interactive Deployment</a></li>
 </ul>
 </li>
 </ul>
@@ -709,10 +710,10 @@ MathJax = {
 <p>Here’s a glimpse of what a typical YAML configuration file might look like:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">log_level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">INFO</span><span class="w"> </span><span class="c1"># default INFO</span>
 <span class="nt">compute_engine</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">shard_num</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w">  </span><span class="c1"># the number of shared workers, default 1</span>
+<span class="w">  </span><span class="nt">thread_num_per_worker</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w">  </span><span class="c1"># the number of shared workers, default 1</span>
 <span class="nt">compiler</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">planner</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">is_one</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">is_on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">  </span><span class="nt">opt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RBO</span>
 <span class="w">  </span><span class="nt">rules</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FilterMatchRule</span>
@@ -752,12 +753,12 @@ MathJax = {
 <td><p>The name of default graph on which to start the graph service.</p></td>
 <td><p>0.0.1</p></td>
 </tr>
-<tr class="row-even"><td><p>compute_engine.shard_num</p></td>
+<tr class="row-even"><td><p>compute_engine.thread_num_per_worker</p></td>
 <td><p>1</p></td>
 <td><p>The number of threads will be used to process the queries. Increase the number can benefit the query throughput</p></td>
 <td><p>0.0.1</p></td>
 </tr>
-<tr class="row-odd"><td><p>compiler.planner.isOn</p></td>
+<tr class="row-odd"><td><p>compiler.planner.is_on</p></td>
 <td><p>true</p></td>
 <td><p>Determines if query optimization is enabled for compiling Cypher queries</p></td>
 <td><p>0.0.1</p></td>

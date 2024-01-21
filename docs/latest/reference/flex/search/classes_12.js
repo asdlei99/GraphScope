@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['walcontentunit_1024',['WalContentUnit',['../structgs_1_1WalContentUnit.html',1,'gs']]],
-  ['walheader_1025',['WalHeader',['../structgs_1_1WalHeader.html',1,'gs']]],
-  ['walsparser_1026',['WalsParser',['../classgs_1_1WalsParser.html',1,'gs']]],
-  ['walwriter_1027',['WalWriter',['../classgs_1_1WalWriter.html',1,'gs']]]
+  ['uninitializedutils_1283',['UninitializedUtils',['../structgs_1_1UninitializedUtils.html',1,'gs']]],
+  ['updatebatch_1284',['UpdateBatch',['../classgs_1_1UpdateBatch.html',1,'gs']]],
+  ['updatetransaction_1285',['UpdateTransaction',['../classgs_1_1UpdateTransaction.html',1,'gs']]],
+  ['updatewalunit_1286',['UpdateWalUnit',['../structgs_1_1UpdateWalUnit.html',1,'gs']]]
 ];

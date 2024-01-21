@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classgs_1_1ArenaAllocator-members.html">List of all members</a>  </div>
@@ -80,38 +81,41 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a926f78f14016e1a050aa882da9d6ced2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a926f78f14016e1a050aa882da9d6ced2">ArenaAllocator</a> ()</td></tr>
-<tr class="separator:a926f78f14016e1a050aa882da9d6ced2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325e0e5374f92ae0089ea3cfcfa8c284"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a325e0e5374f92ae0089ea3cfcfa8c284">ArenaAllocator</a> (const std::string &amp;prefix)</td></tr>
+<tr class="separator:a325e0e5374f92ae0089ea3cfcfa8c284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a614ac905b3143e7506aa2c051f97e5b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a614ac905b3143e7506aa2c051f97e5b7">~ArenaAllocator</a> ()</td></tr>
 <tr class="separator:a614ac905b3143e7506aa2c051f97e5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ad54d6f9f14c028d47dc2ac1acc30a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a0ad54d6f9f14c028d47dc2ac1acc30a0">reserve</a> (size_t cap)</td></tr>
 <tr class="separator:a0ad54d6f9f14c028d47dc2ac1acc30a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dbab749734250033646bb426aaaad6c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a3dbab749734250033646bb426aaaad6c">allocate</a> (size_t size)</td></tr>
 <tr class="separator:a3dbab749734250033646bb426aaaad6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2328f9b52e55333fbed0ef6124c204ea"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a2328f9b52e55333fbed0ef6124c204ea">allocate_typed</a> (size_t span, size_t num, const std::function&lt; void(void *)&gt; &amp;dtor)</td></tr>
-<tr class="separator:a2328f9b52e55333fbed0ef6124c204ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4e12b841a2a2db64a23ebfe064a0f163"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a4e12b841a2a2db64a23ebfe064a0f163">allocate_batch</a> (size_t size)</td></tr>
+<tr class="separator:a4e12b841a2a2db64a23ebfe064a0f163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5c7ad17cdfda79894682f6c1a7f43a72"><td class="memItemLeft" align="right" valign="top">std::vector&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a5c7ad17cdfda79894682f6c1a7f43a72">buffers_</a></td></tr>
-<tr class="separator:a5c7ad17cdfda79894682f6c1a7f43a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73646cc41dcca9831b964ead64d2c13"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#ab73646cc41dcca9831b964ead64d2c13">prefix_</a></td></tr>
+<tr class="separator:ab73646cc41dcca9831b964ead64d2c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a755d0ebf4fdfa5f7da20864f06a55"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classgs_1_1mmap__array.html">mmap_array</a>&lt; char &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a12a755d0ebf4fdfa5f7da20864f06a55">mmap_buffers_</a></td></tr>
+<tr class="separator:a12a755d0ebf4fdfa5f7da20864f06a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad840478fe5bbf9e8a90c06df92be843"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#aad840478fe5bbf9e8a90c06df92be843">cur_buffer_</a></td></tr>
 <tr class="separator:aad840478fe5bbf9e8a90c06df92be843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26fb86bb990a85965ebbb51aeb2eee25"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a26fb86bb990a85965ebbb51aeb2eee25">cur_loc_</a></td></tr>
 <tr class="separator:a26fb86bb990a85965ebbb51aeb2eee25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a663d332e44bb313d2604cd2247aa842f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a663d332e44bb313d2604cd2247aa842f">cur_size_</a></td></tr>
 <tr class="separator:a663d332e44bb313d2604cd2247aa842f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e63084e5045663dcc46bb44a7caa740"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple&lt; void *, size_t, size_t, std::function&lt; void(void *)&gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#a7e63084e5045663dcc46bb44a7caa740">typed_allocations_</a></td></tr>
-<tr class="separator:a7e63084e5045663dcc46bb44a7caa740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ab0e7f590122d562a501227200859b2bb"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#ab0e7f590122d562a501227200859b2bb">batch_size</a> = 4096</td></tr>
+<tr class="memitem:ab0e7f590122d562a501227200859b2bb"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgs_1_1ArenaAllocator.html#ab0e7f590122d562a501227200859b2bb">batch_size</a> = 128 * 1024 * 1024</td></tr>
 <tr class="separator:ab0e7f590122d562a501227200859b2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a926f78f14016e1a050aa882da9d6ced2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a926f78f14016e1a050aa882da9d6ced2">&#9670;&nbsp;</a></span>ArenaAllocator()</h2>
+<a id="a325e0e5374f92ae0089ea3cfcfa8c284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325e0e5374f92ae0089ea3cfcfa8c284">&#9670;&nbsp;</a></span>ArenaAllocator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,7 +126,8 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">gs::ArenaAllocator::ArenaAllocator </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>prefix</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -187,8 +192,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2328f9b52e55333fbed0ef6124c204ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2328f9b52e55333fbed0ef6124c204ea">&#9670;&nbsp;</a></span>allocate_typed()</h2>
+<a id="a4e12b841a2a2db64a23ebfe064a0f163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e12b841a2a2db64a23ebfe064a0f163">&#9670;&nbsp;</a></span>allocate_batch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,32 +202,16 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* gs::ArenaAllocator::allocate_typed </td>
+          <td class="memname">void* gs::ArenaAllocator::allocate_batch </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>span</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>size</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::function&lt; void(void *)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>dtor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -266,34 +255,12 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr size_t gs::ArenaAllocator::batch_size = 4096</td>
+          <td class="memname">constexpr size_t gs::ArenaAllocator::batch_size = 128 * 1024 * 1024</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5c7ad17cdfda79894682f6c1a7f43a72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c7ad17cdfda79894682f6c1a7f43a72">&#9670;&nbsp;</a></span>buffers_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;void*&gt; gs::ArenaAllocator::buffers_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -366,8 +333,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e63084e5045663dcc46bb44a7caa740"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e63084e5045663dcc46bb44a7caa740">&#9670;&nbsp;</a></span>typed_allocations_</h2>
+<a id="a12a755d0ebf4fdfa5f7da20864f06a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a755d0ebf4fdfa5f7da20864f06a55">&#9670;&nbsp;</a></span>mmap_buffers_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,7 +343,29 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::tuple&lt;void*, size_t, size_t, std::function&lt;void(void*)&gt; &gt; &gt; gs::ArenaAllocator::typed_allocations_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classgs_1_1mmap__array.html">mmap_array</a>&lt;char&gt;*&gt; gs::ArenaAllocator::mmap_buffers_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab73646cc41dcca9831b964ead64d2c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73646cc41dcca9831b964ead64d2c13">&#9670;&nbsp;</a></span>prefix_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string gs::ArenaAllocator::prefix_</td>
         </tr>
       </table>
   </td>
